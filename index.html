@@ -20,45 +20,58 @@
     <main class="container">
         <section class="slider-container">
             <h2 class="section-title">Sorotan Utama</h2>
-            <div class="news-slider">
-                <div class="slide-card">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800" alt="Salvatore's Hijab">
-                    <div class="slide-info">
-                        <span class="badge">Fashion</span>
-                        <h3>Tren Hijab Pastel 2026: Sentuhan Soft Pink Salvatore's Hijab yang Menawan</h3>
-                        <p>Gaya minimalis dengan warna-warna lembut kembali mendominasi panggung busana tahun ini...</p>
-                        <a href="detail-hijab.html" class="btn-read">Baca Selengkapnya</a>
+            
+            <div class="slider-wrapper">
+                <button class="slider-btn prev-btn" id="prevBtn">&#10094;</button>
+                
+                <div class="news-slider" id="newsSlider">
+                    <div class="slide-card">
+                        <img src="https://images.unsplash.com/photo-1608731177174-897db674d812?q=80&w=800" alt="Tren Salvatore's Hijab">
+                        <div class="slide-info">
+                            <span class="badge">Fashion</span>
+                            <h3>Tren Hijab Pastel 2026: Sentuhan Soft Pink Salvatore's Hijab yang Menawan</h3>
+                            <p>Gaya minimalis dengan warna-warna lembut kembali mendominasi panggung busana modest tahun ini...</p>
+                            <a href="detail-hijab.html" class="btn-read">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="slide-card">
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=800" alt="Gaya Hidup">
+                        <div class="slide-info">
+                            <span class="badge">Gaya Hidup</span>
+                            <h3>5 Tips Menjaga Keseimbangan Hidup bagi Mahasiswa Aktif</h3>
+                            <p>Mengatur waktu kuliah dan hobi memang menantang, simak tips praktisnya di sini...</p>
+                            <a href="detail-gaya-hidup.html" class="btn-read">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="slide-card">
+                        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=800" alt="Skincare">
+                        <div class="slide-info">
+                            <span class="badge">Kecantikan</span>
+                            <h3>Rahasia Kulit Glowing Alami dengan Skincare Minimalis</h3>
+                            <p>Dapatkan kulit sehat terhidrasi tanpa perlu puluhan tahapan produk yang rumit...</p>
+                            <a href="detail-skincare.html" class="btn-read">Baca Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="slide-card">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800" alt="Teknologi">
+                        <div class="slide-info">
+                            <span class="badge">Teknologi</span>
+                            <h3>Perkembangan AI yang Semakin Mempermudah Desainer UI/UX</h3>
+                            <p>Bagaimana teknologi masa kini membantu mempermudah pemilihan palet warna estetis...</p>
+                            <a href="detail-teknologi.html" class="btn-read">Baca Selengkapnya</a>
+                        </div>
                     </div>
                 </div>
-                <div class="slide-card">
-                    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=800" alt="Gaya Hidup">
-                    <div class="slide-info">
-                        <span class="badge">Gaya Hidup</span>
-                        <h3>5 Tips Menjaga Keseimbangan Hidup bagi Mahasiswa Aktif</h3>
-                        <p>Mengatur waktu kuliah dan hobi memang menantang, simak tips praktisnya di sini...</p>
-                        <a href="detail-gaya-hidup.html" class="btn-read">Baca Selengkapnya</a>
-                    </div>
-                </div>
-                <div class="slide-card">
-                    <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=800" alt="Skincare">
-                    <div class="slide-info">
-                        <span class="badge">Kecantikan</span>
-                        <h3>Rahasia Kulit Glowing Alami dengan Skincare Minimalis</h3>
-                        <p>Dapatkan kulit sehat terhidrasi tanpa perlu puluhan tahapan produk yang rumit...</p>
-                        <a href="detail-skincare.html" class="btn-read">Baca Selengkapnya</a>
-                    </div>
-                </div>
-                <div class="slide-card">
-                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800" alt="Teknologi">
-                    <div class="slide-info">
-                        <span class="badge">Teknologi</span>
-                        <h3>Perkembangan AI yang Semakin Mempermudah Desainer UI/UX</h3>
-                        <p>Bagaimana teknologi masa kini membantu mempermudah pemilihan palet warna estetis...</p>
-                        <a href="detail-teknologi.html" class="btn-read">Baca Selengkapnya</a>
-                    </div>
-                </div>
+                
+                <button class="slider-btn next-btn" id="nextBtn">&#10095;</button>
             </div>
-            <div class="slider-instruction">← Geser untuk melihat berita lainnya (1/4) →</div>
+
+            <div class="slider-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+            </div>
         </section>
 
         <hr class="divider">
@@ -67,7 +80,7 @@
             <h2 class="section-title">Berita Terbaru</h2>
             <div class="news-grid">
                 <div class="news-card">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=500" alt="Berita Hijab">
+                    <img src="https://images.unsplash.com/photo-1608731177174-897db674d812?q=80&w=500" alt="Berita Hijab">
                     <div class="card-body">
                         <span class="card-badge">Fashion</span>
                         <h4>Tren Hijab Pastel 2026: Sentuhan Soft Pink Salvatore's Hijab</h4>
@@ -110,5 +123,62 @@
         <p>&copy; 2026 <strong>Salvatore Daily</strong>. Created with ♥ by Felita Azzahra Ramadhani</p>
     </footer>
 
+    <script>
+        const slider = document.getElementById('newsSlider');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const dots = document.querySelectorAll('.dot');
+
+        let currentIndex = 0;
+
+        function updateDots() {
+            dots.forEach((dot, index) => {
+                if (index === currentIndex) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+
+        function scrollToSlide(index) {
+            const slideWidth = slider.querySelector('.slide-card').clientWidth + 24; 
+            slider.scrollTo({
+                left: slideWidth * index,
+                behavior: 'smooth'
+            });
+            currentIndex = index;
+            updateDots();
+        }
+
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < dots.length - 1) {
+                scrollToSlide(currentIndex + 1);
+            } else {
+                scrollToSlide(0); 
+            }
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                scrollToSlide(currentIndex - 1);
+            } else {
+                scrollToSlide(dots.length - 1); 
+            }
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                scrollToSlide(index);
+            });
+        });
+
+        slider.addEventListener('scroll', () => {
+            const slideWidth = slider.querySelector('.slide-card').clientWidth + 24;
+            const scrollPosition = slider.scrollLeft;
+            currentIndex = Math.round(scrollPosition / slideWidth);
+            updateDots();
+        });
+    </script>
 </body>
 </html>
